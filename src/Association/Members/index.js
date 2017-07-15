@@ -2,32 +2,27 @@ import React from 'react';
 import { List, Datagrid, TextField } from 'admin-on-rest';
 
 export default (props) => (
-  <List {...props}>
+  <List title={props.options.label} {...props}>
     <Datagrid>
-      <TextField source="serial_number" />
-      <TextField source="type" />
-      <TextField source="last_name" />
-      <TextField source="first_name" />
+      <TextField label="編號" source="serial_number" />
+      <TextField label="狀態" source="type" />
+      <TextField label="姓氏" source="last_name" />
+      <TextField label="名字" source="first_name" />
 
-      <TextField source="gender" />
-      <TextField source="identification" />
-      <TextField source="birthday" />
-      <TextField source="email" />
-      <TextField source="home_phone_number" />
-      <TextField source="cell_phone_number" />
+      <TextField label="性別" source="gender" />
+      <TextField label="身分證" source="identification" />
+      <TextField label="生日" source="birthday" />
+      <TextField label="信箱" source="email" />
+      <TextField label="手機號碼" source="cell_phone_number" />
+      <TextField label="電話號碼" source="home_phone_number" />
 
-      <TextField source="postcode" />
-      <TextField source="city" />
-      <TextField source="zone" />
-      <TextField source="address" />
-      <TextField source="contact_last_name" />
-      <TextField source="contact_first_name" />
-      <TextField source="contact_cell_phone_number" />
-      <TextField source="cell_phone_number" />
-      <TextField source="home_phone_number" />
-      <TextField source="cell_phone_number" />
-      <TextField source="home_phone_number" />
-      <TextField source="cell_phone_number" />
+      <TextField label="郵遞區號" source="postcode" />
+      <TextField label="縣市" source="city" />
+      <TextField label="鄉鎮市區" source="zone" />
+      <TextField label="地址" source="address" />
+      <TextField label="聯絡人：姓氏" source="contact_last_name" />
+      <TextField label="聯絡人：名字" source="contact_first_name" />
+      <TextField label="聯絡人：手機號碼" source="contact_cell_phone_number" />
     </Datagrid>
   </List>
 );

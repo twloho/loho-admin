@@ -10,8 +10,8 @@ const restClient = client('http://api.loho.dev/api');
 class App extends Component {
   render() {
     return (
-      <Admin restClient={restClient}>
-        <Resource name="members" list={MemberList} />
+      <Admin title="LOHO" restClient={restClient}>
+        <Resource name="members" options={{ label: '會員清單' }} list={MemberList} />
       </Admin>
     );
   }
