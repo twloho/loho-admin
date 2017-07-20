@@ -1,0 +1,3 @@
+[submodule "src/aor-jsonapi-client"]
+	path = src/aor-jsonapi-client
+	url = git@github.com:twloho/aor-jsonapi-client.git
