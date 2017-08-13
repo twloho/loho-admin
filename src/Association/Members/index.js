@@ -1,8 +1,30 @@
 import React from 'react';
-import { List, Datagrid, TextField } from 'admin-on-rest';
+import {
+  List,
+  Datagrid,
+  TextField,
+  Filter,
+  TextInput,
+  ReferenceArrayInput,
+  SelectArrayInput,
+  QuickFilter,
+} from 'admin-on-rest';
+
+const PostFilter = ({ ...props }) => (
+  <Filter {...props}>
+    <TextInput label="編號" source="serial_number" />
+    <TextInput label="姓氏" source="last_name" />
+    <TextInput label="名字" source="first_name" />
+
+    <TextInput label="身分證" source="identification" />
+    <TextInput label="信箱" source="email" />
+    <TextInput label="手機號碼" source="cell_phone_number" />
+    <TextInput label="電話號碼" source="home_phone_number" />
+  </Filter>
+);
 
 export default (props) => (
-  <List title={props.options.label} {...props}>
+  <List title={props.options.label} filters={<PostFilter />} {...props}>
     <Datagrid>
       <TextField label="編號" source="serial_number" />
       <TextField label="狀態" source="status" />
