@@ -3,7 +3,7 @@ import { Admin, Resource } from 'admin-on-rest';
 
 import './App.css';
 import restClient from './aor-jsonapi-client/src/restClient';
-import MemberList from './Association/Members';
+import MemberList from './Association/MemberList';
 
 const client = restClient('http://api.loho.dev/api');
 

@@ -23,7 +23,7 @@ const PostFilter = ({ ...props }) => (
   </Filter>
 );
 
-export default (props) => (
+const MemberList = (props) => (
   <List title={props.options.label} filters={<PostFilter />} {...props}>
     <Datagrid>
       <TextField label="編號" source="serial_number" />
@@ -48,3 +48,5 @@ export default (props) => (
     </Datagrid>
   </List>
 );
+
+export default MemberList;
