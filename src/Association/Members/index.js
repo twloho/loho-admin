@@ -5,7 +5,7 @@ export default (props) => (
   <List title={props.options.label} {...props}>
     <Datagrid>
       <TextField label="編號" source="serial_number" />
-      <TextField label="狀態" source="type" />
+      <TextField label="狀態" source="status" />
       <TextField label="姓氏" source="last_name" />
       <TextField label="名字" source="first_name" />
 
