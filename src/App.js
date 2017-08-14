@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Admin, Resource } from 'admin-on-rest';
 
-import './App.css';
 import restClient from './aor-jsonapi-client/src/restClient';
 import MemberList from './Association/MemberList';
 import MemberCreate from './Association/MemberCreate';
