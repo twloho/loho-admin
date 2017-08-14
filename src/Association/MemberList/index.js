@@ -5,9 +5,6 @@ import {
   TextField,
   Filter,
   TextInput,
-  ReferenceArrayInput,
-  SelectArrayInput,
-  QuickFilter,
 } from 'admin-on-rest';
 
 const PostFilter = ({ ...props }) => (

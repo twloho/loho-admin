@@ -5,10 +5,7 @@ import {
   TextInput,
   SaveButton,
   Toolbar,
-  RichTextInput,
   DateInput,
-  NumberInput,
-  BooleanInput,
 } from 'admin-on-rest';
 
 const requiredFields = [
