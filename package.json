@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "admin-on-rest": "^1.2.1",
+    "babel-preset-react-app": "^3.0.2",
+    "babel-runtime": "^6.26.0",
     "material-ui": "^0.18.7",
     "normalize.css": "^7.0.0",
     "react": "^15.6.1",
