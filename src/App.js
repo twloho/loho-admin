@@ -5,7 +5,7 @@ import restClient from './aor-jsonapi-client/src/restClient';
 import MemberList from './Association/MemberList';
 import MemberCreate from './Association/MemberCreate';
 
-const client = restClient('http://api.loho.dev/api');
+const client = restClient('http://api.loho.dev/api/v1');
 
 class App extends Component {
   render() {
