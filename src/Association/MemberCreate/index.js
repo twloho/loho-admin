@@ -6,6 +6,7 @@ import {
   SaveButton,
   Toolbar,
   DateInput,
+  SelectInput,
 } from 'admin-on-rest';
 
 const requiredFields = [
@@ -40,9 +41,14 @@ const validateMember = (values) => {
 };
 
 const MemberCreateToolbar = props => <Toolbar {...props} >
-  <SaveButton label="儲存並瀏覽" redirect="show" submitOnEnter={true} />
-  <SaveButton label="儲存" redirect={false} submitOnEnter={false} raised={false} />
+  <SaveButton label="create.saveAndPreview" redirect="show" submitOnEnter={true} />
+  <SaveButton label="create.save" redirect={false} submitOnEnter={false} raised={false} />
 </Toolbar>;
+
+const choices = [
+  { id: '0', name: '男' },
+  { id: '1', name: '女' },
+];
 
 const MemberCreate = ({ ...props }) => (
   <Create {...props}>
@@ -52,8 +58,7 @@ const MemberCreate = ({ ...props }) => (
     >
       <TextInput label="姓氏" source="last_name" />
       <TextInput label="名字" source="first_name" />
-
-      <TextInput label="性別" source="gender" />
+      <SelectInput label="性別" source="gender" choices={choices} />
       <TextInput label="身分證" source="identification" />
       <DateInput label="生日" source="birthday" />
       <TextInput label="信箱" source="email" />
